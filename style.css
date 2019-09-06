@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.modalbtn {
+    background: coral;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.modalbtn:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+}
+
+.modal-content {
+    margin: 20% auto;
+    width: 40%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.8);
+    background: #f4f4f4;
+    animation-name: modalOpen;
+    animation-delay: 5s;
+}
+
+.closebtn {
+    float: right;
+    color: #000;
+    font-size: 30px;
+}
+.closebtn:hover, .closebtn:focus{
+    color: red;
+    cursor: pointer;
+}
+
+header {
+    margin:0;
+    background: coral;
+    color: #fff;
+    padding: 4px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background: coral;
+    padding: 2px;
+}
+
+.modalbody{
+    padding: 5px;
+}
+
+/*We will animate the opacity from 0 to 1 in 1sec*/
+@keyframes modalOpen {
+    from{opacity: 0}
+    to{opacity: 1}
+}
